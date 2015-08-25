@@ -31,15 +31,15 @@
                 <tr>
                     <th>ID</th>
                     <th>Product Name</th>
-                    <th>Price</th>
+                    <th>type</th>
                 </tr>
             </thead>
             <tbody>
                 {{#data}}
-                    <tr data-id="{{id}}" data-name="{{name}}">
-                        <td>{{id}}</td>
+                    <tr data-id="{{pid}}" data-name="{{name}}" data-type="{{type}}">
+                        <td>{{pid}}</td>
                         <td>{{name}}</td>
-                        <td>{{price}}</td>
+                        <td>{{type}}</td>
                     </tr>
                 {{/data}}
             </tbody>
@@ -53,7 +53,7 @@
     $(function() {
         $.ajax({
             type: 'get',
-            url: 'http://localhost:8080/Test001/ws/rest/products',
+            url: 'http://166.111.130.47/cloud/staging/bdpe-rest-service/projects',
             dataType: 'json',
             success: function(data) {
                 var template = $("#product_table_template").html();
