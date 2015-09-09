@@ -1,4 +1,4 @@
-package demo.ws.rest.study1_cxf;
+package demo.ws.rest_study1;
 
 import java.util.List;
 
