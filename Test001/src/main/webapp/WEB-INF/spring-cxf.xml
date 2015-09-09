@@ -10,6 +10,8 @@
     <jaxrs:server address="/rest">
         <jaxrs:serviceBeans>
             <ref bean="productServiceImpl"/>
+             <ref bean="customerServiceImpl"/>
+            
         </jaxrs:serviceBeans>
         <jaxrs:providers>
             <bean class="com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider"/>
